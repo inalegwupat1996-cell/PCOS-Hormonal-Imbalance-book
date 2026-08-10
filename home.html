@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Natural Guide to Managing PCOS & Hormonal Imbalance</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #fffaf7;
+      color: #2d2926;
+      line-height: 1.6;
+    }
+
+    /* HEADER */
+    header {
+      background: #fff;
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: #8b4b68;
+    }
+
+    header a {
+      text-decoration: none;
+      color: #8b4b68;
+      font-weight: bold;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 650px;
+      padding: 80px 7%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 50px;
+      background: linear-gradient(135deg, #fff5f7, #f7eee9);
+    }
+
+    .hero-text {
+      max-width: 600px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #f2d5df;
+      color: #7b3856;
+      padding: 8px 18px;
+      border-radius: 30px;
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: 52px;
+      line-height: 1.1;
+      color: #5d3045;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: #a55378;
+    }
+
+    .hero p {
+      font-size: 19px;
+      color: #625b58;
+      margin-bottom: 30px;
+    }
+
+    .cta {
+      display: inline-block;
+      background: #9b4f70;
+      color: white;
+      text-decoration: none;
+      padding: 16px 30px;
+      border-radius: 35px;
+      font-weight: bold;
+      font-size: 17px;
+      transition: 0.3s;
+      box-shadow: 0 8px 20px rgba(155,79,112,0.25);
+    }
+
+    .cta:hover {
+      background: #7d3c59;
+      transform: translateY(-2px);
+    }
+
+    .hero-image {
+      width: 330px;
+      height: 450px;
+      background: linear-gradient(145deg, #7e3f59, #c97899);
+      border-radius: 12px;
+      box-shadow: 15px 20px 40px rgba(0,0,0,0.18);
+      padding: 35px 25px;
+      color: white;
+      text-align: center;
+      transform: rotate(2deg);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .hero-image .leaf {
+      font-size: 45px;
+      margin-bottom: 20px;
+    }
+
+    .hero-image h2 {
+      font-size: 32px;
+      line-height: 1.2;
+      margin-bottom: 15px;
+    }
+
+    .hero-image p {
+      color: #fff;
+      font-size: 16px;
+    }
+
+    /* SECTION */
+    section {
+      padding: 80px 7%;
+    }
+
+    .section-title {
+      text-align: center;
+      max-width: 700px;
+      margin: auto auto 50px;
+    }
+
+    .section-title h2 {
+      font-size: 38px;
+      color: #5d3045;
+      margin-bottom: 15px;
+    }
+
+    .section-title p {
+      color: #706866;
+    }
+
+    /* BENEFITS */
+    .benefits {
+      background: white;
+    }
+
+    .benefit-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .benefit-card {
+      background: #fff8fa;
+      padding: 30px;
+      border-radius: 18px;
+      border: 1px solid #f0dfe5;
+    }
+
+    .icon {
+      width: 55px;
+      height: 55px;
+      background: #f2d5df;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 25px;
+      margin-bottom: 18px;
+    }
+
+    .benefit-card h3 {
+      color: #6d3851;
+      margin-bottom: 10px;
+    }
+
+    .benefit-card p {
+      color: #706866;
+    }
+
+    /* ABOUT BOOK */
+    .about {
+      background: #f8eee9;
+    }
+
+    .about-container {
+      display: flex;
+      align-items: center;
+      gap: 60px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .about-book {
+      width: 280px;
+      min-width: 280px;
+      height: 380px;
+      background: linear-gradient(145deg, #6f374e, #b96889);
+      border-radius: 10px;
+      padding: 35px 25px;
+      color: white;
+      text-align: center;
+      box-shadow: 12px 15px 30px rgba(0,0,0,0.15);
+    }
+
+    .about-book h3 {
+      font-size: 28px;
+      margin-top: 25px;
+    }
+
+    .about-text h2 {
+      color: #5d3045;
+      font-size: 38px;
+      margin-bottom: 20px;
+    }
+
+    .about-text p {
+      margin-bottom: 15px;
+      color: #625b58;
+    }
+
+    .about-text ul {
+      list-style: none;
+      margin: 20px 0;
+    }
+
+    .about-text li {
+      margin-bottom: 12px;
+    }
+
+    .about-text li::before {
+      content: "✓";
+      color: #9b4f70;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    /* CONTENT */
+    .contents {
+      background: white;
+    }
+
+    .content-list {
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .content-item {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding: 22px;
+      margin-bottom: 15px;
+      background: #fff8fa;
+      border-radius: 14px;
+      border-left: 5px solid #9b4f70;
+    }
+
+    .number {
+      font-size: 25px;
+      font-weight: bold;
+      color: #9b4f70;
+    }
+
+    /* TESTIMONIALS */
+    .testimonials {
+      background: #f8eee9;
+    }
+
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .testimonial {
+      background: white;
+      padding: 30px;
+      border-radius: 18px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    }
+
+    .stars {
+      color: #d39a34;
+      margin-bottom: 15px;
+    }
+
+    .testimonial p {
+      font-style: italic;
+      color: #615b58;
+      margin-bottom: 18px;
+    }
+
+    .testimonial strong {
+      color: #6d3851;
+    }
+
+    /* PRICE */
+    .pricing {
+      text-align: center;
+      background: #fff;
+    }
+
+    .price-box {
+      max-width: 500px;
+      margin: auto;
+      background: linear-gradient(145deg, #6f374e, #a95376);
+      color: white;
+      padding: 45px 30px;
+      border-radius: 25px;
+      box-shadow: 0 15px 35px rgba(105,53,76,0.2);
+    }
+
+    .price-box h2 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 52px;
+      font-weight: bold;
+      margin: 15px 0;
+    }
+
+    .price-box p {
+      margin-bottom: 25px;
+      opacity: 0.9;
+    }
+
+    .price-box .cta {
+      background: white;
+      color: #8b4565;
+    }
+
+    /* FAQ */
+    .faq {
+      background: #fff8fa;
+    }
+
+    .faq-container {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    details {
+      background: white;
+      margin-bottom: 12px;
+      padding: 20px;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+
+    summary {
+      font-weight: bold;
+      color: #63354c;
+    }
+
+    details p {
+      padding-top: 15px;
+      color: #68615e;
+    }
+
+    /* DISCLAIMER */
+    .disclaimer {
+      background: #f3e7e2;
+      padding: 35px 7%;
+      text-align: center;
+      color: #655d59;
+      font-size: 13px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #432432;
+      color: white;
+      text-align: center;
+      padding: 30px 7%;
+    }
+
+    footer p {
+      opacity: 0.8;
+      font-size: 14px;
+    }
+
+    /* MOBILE */
+    @media (max-width: 800px) {
+
+      .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 60px;
+      }
+
+      .hero h1 {
+        font-size: 39px;
+      }
+
+      .hero-image {
+        width: 280px;
+        height: 390px;
+      }
+
+      .benefit-grid,
+      .testimonial-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .about-text h2 {
+        font-size: 32px;
+      }
+
+      .about-text ul {
+        text-align: left;
+      }
+
+      section {
+        padding: 60px 5%;
+      }
+
+      .section-title h2 {
+        font-size: 31px;
+      }
+
+      header {
+        padding: 15px 5%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">Natural Wellness Guide</div>
+    <a href="#buy">Get the E-book</a>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <div class="hero-text">
+
+      <div class="badge">
+        🌿 DIGITAL E-BOOK
+      </div>
+
+      <h1>
+        Natural Guide to
+        <span>Managing PCOS & Hormonal Imbalance</span>
+      </h1>
+
+      <p>
+        Discover practical, evidence-informed lifestyle strategies,
+        nourishing habits and simple wellness practices that can help
+        you better understand and manage your hormonal health.
+      </p>
+
+      <a href="#buy" class="cta">
+        Get Your Copy Today →
+      </a>
+
+    </div>
+
+    <div class="hero-image">
+
+      <div class="leaf">🌿</div>
+
+      <h2>
+        Natural Guide
+        to Managing
+        PCOS
+      </h2>
+
+      <p>
+        & Hormonal Imbalance
+      </p>
+
+      <br>
+
+      <small>
+        A practical wellness guide
+      </small>
+
+    </div>
+
+  </section>
+
+
+  <!-- BENEFITS -->
+  <section class="benefits">
+
+    <div class="section-title">
+      <h2>Take Charge of Your Wellness</h2>
+
+      <p>
+        Learn simple approaches that can support healthier everyday
+        habits while helping you understand your body better.
+      </p>
+    </div>
+
+    <div class="benefit-grid">
+
+      <div class="benefit-card">
+        <div class="icon">🥗</div>
+
+        <h3>Better Nutrition</h3>
+
+        <p>
+          Learn about balanced eating patterns and nourishing food
+          choices that can support your overall wellbeing.
+        </p>
+      </div>
+
+      <div class="benefit-card">
+        <div class="icon">🌿</div>
+
+        <h3>Natural Wellness</h3>
+
+        <p>
+          Explore practical lifestyle habits and wellness practices
+          that can complement your personal health journey.
+        </p>
+      </div>
+
+      <div class="benefit-card">
+        <div class="icon">🧘</div>
+
+        <h3>Stress & Lifestyle</h3>
+
+        <p>
+          Understand the importance of sleep, movement, stress
+          management and sustainable daily routines.
+        </p>
+      </div>
+
+      <div class="benefit-card">
+        <div class="icon">💗</div>
+
+        <h3>Understand Your Body</h3>
+
+        <p>
+          Learn about common PCOS and hormonal imbalance symptoms
+          and how to track changes in your wellbeing.
+        </p>
+      </div>
+
+      <div class="benefit-card">
+        <div class="icon">📖</div>
+
+        <h3>Easy to Understand</h3>
+
+        <p>
+          Information is presented in a simple and practical format
+          designed for everyday readers.
+        </p>
+      </div>
+
+      <div class="benefit-card">
+        <div class="icon">✨</div>
+
+        <h3>Practical Steps</h3>
+
+        <p>
+          Get realistic ideas you can discuss with your healthcare
+          professional and incorporate into your lifestyle.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT BOOK -->
+  <section class="about">
+
+    <div class="about-container">
+
+      <div class="about-book">
+        <div style="font-size:45px;">🌿</div>
+
+        <h3>
+          Natural Guide
+          to Managing
+          PCOS
+        </h3>
+
+        <p>
+          & Hormonal Imbalance
+        </p>
+      </div>
+
+      <div class="about-text">
+
+        <h2>What's Inside?</h2>
+
+        <p>
+          This practical digital guide is designed to help women
+          understand PCOS and hormonal health while making healthier
+          lifestyle choices.
+        </p>
+
+        <ul>
+          <li>Understanding PCOS and hormonal health</li>
+          <li>Nutrition and balanced eating</li>
+          <li>Movement and physical activity</li>
+          <li>Sleep and stress management</li>
+          <li>Tracking symptoms and cycles</li>
+          <li>Healthy lifestyle routines</li>
+          <li>Questions to discuss with your healthcare provider</li>
+        </ul>
+
+        <a href="#buy" class="cta">
+          I Want the Guide
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTENT -->
+  <section class="contents">
+
+    <div class="section-title">
+
+      <h2>
+        A Simple Guide You Can Actually Use
+      </h2>
+
+      <p>
+        No complicated language. Just practical information organized
+        into easy-to-follow sections.
+      </p>
+
+    </div>
+
+    <div class="content-list">
+
+      <div class="content-item">
+        <div class="number">01</div>
+        <div>
+          <strong>Understanding PCOS</strong>
+          <p>Learn what PCOS is and why symptoms can vary from person to person.</p>
+        </div>
+      </div>
+
+      <div class="content-item">
+        <div class="number">02</div>
+        <div>
+          <strong>Food & Nutrition</strong>
+          <p>Explore balanced approaches to everyday meals and healthy eating.</p>
+        </div>
+      </div>
+
+      <div class="content-item">
+        <div class="number">03</div>
+        <div>
+          <strong>Movement & Exercise</strong>
+          <p>Discover realistic ways to include physical activity in your routine.</p>
+        </div>
+      </div>
+
+      <div class="content-item">
+        <div class="number">04</div>
+        <div>
+          <strong>Stress & Sleep</strong>
+          <p>Understand how everyday lifestyle factors can affect overall wellbeing.</p>
+        </div>
+      </div>
+
+      <div class="content-item">
+        <div class="number">05</div>
+        <div>
+          <strong>Creating Your Wellness Routine</strong>
+          <p>Build simple habits that are realistic and sustainable.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+
+    <div class="section-title">
+
+      <h2>What Readers Are Saying</h2>
+
+      <p>
+        Replace these sample testimonials with genuine reviews from
+        your customers.
+      </p>
+
+    </div>
+
+    <div class="testimonial-grid">
+
+      <div class="testimonial">
+
+        <div class="stars">★★★★★</div>
+
+        <p>
+          "I loved how simple and easy to understand the guide was.
+          It gave me practical ideas I could actually work into my routine."
+        </p>
+
+        <strong>— Sarah M.</strong>
+
+      </div>
+
+      <div class="testimonial">
+
+        <div class="stars">★★★★★</div>
+
+        <p>
+          "The nutrition and lifestyle sections were especially helpful.
+          Everything was organized in a way that made sense."
+        </p>
+
+        <strong>— Amanda K.</strong>
+
+      </div>
+
+      <div class="testimonial">
+
+        <div class="stars">★★★★★</div>
+
+        <p>
+          "A very practical wellness resource. I now have better
+          conversations with my healthcare provider about my symptoms."
+        </p>
+
+        <strong>— Jennifer O.</strong>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PRICING -->
+  <section class="pricing" id="buy">
+
+    <div class="section-title">
+
+      <h2>Start Your Wellness Journey</h2>
+
+      <p>
+        Get instant digital access to the guide.
+      </p>
+
+    </div>
+
+    <div class="price-box">
+
+      <h2>Natural Guide to Managing PCOS</h2>
+
+      <div class="price">
+        ₦5,000
+      </div>
+
+      <p>
+        One-time payment • Digital e-book • Instant access
+      </p>
+
+      <!-- Replace # with your payment/checkout link -->
+      <a href="#" class="cta">
+        GET THE E-BOOK NOW
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- FAQ -->
+  <section class="faq">
+
+    <div class="section-title">
+
+      <h2>Frequently Asked Questions</h2>
+
+    </div>
+
+    <div class="faq-container">
+
+      <details>
+        <summary>Is this e-book a medical treatment for PCOS?</summary>
+
+        <p>
+          No. This e-book is an educational wellness resource. It does
+          not diagnose, treat, cure or prevent PCOS or any other medical
+          condition. Always speak with a qualified healthcare professional
+          about your individual health needs.
+        </p>
+      </details>
+
+      <details>
+        <summary>Is the e-book suitable for beginners?</summary>
+
+        <p>
+          Yes. The guide is designed to explain wellness concepts in
+          straightforward language and provide practical lifestyle ideas.
+        </p>
+      </details>
+
+      <details>
+        <summary>How will I receive the e-book?</summary>
+
+        <p>
+          After successful payment, provide your customers with a
+          download link or send the PDF directly to their email.
+        </p>
+      </details>
+
+      <details>
+        <summary>Can I use the guide instead of seeing a doctor?</summary>
+
+        <p>
+          No. The guide should complement—not replace—professional
+          medical advice, diagnosis or treatment.
+        </p>
+      </details>
+
+    </div>
+
+  </section>
+
+
+  <!-- DISCLAIMER -->
+  <div class="disclaimer">
+
+    <strong>Important Health Disclaimer</strong>
+
+    <p>
+      This e-book is intended for general educational and wellness
+      information only. It is not medical advice and is not intended
+      to diagnose, treat, cure or prevent any disease or medical
+      condition. Individual health needs vary. Consult a qualified
+      healthcare professional before making significant changes to
+      your diet, exercise, supplements or treatment plan.
+    </p>
+
+  </div>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <h3>Natural Wellness Guide</h3>
+
+    <p>
+      © 2026 Natural Wellness Guide. All rights reserved.
+    </p>
+
+  </footer>
+
+</body>
+</html>
